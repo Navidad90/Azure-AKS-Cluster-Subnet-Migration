@@ -6,9 +6,10 @@
 2. [Step 2: Adding a New Node Pool]
 3. [Step 3: Migrating Workloads]
 4. [Step 4: Removing the Old Node Pool]
-5. [Step 5: Backing Up and Restoring PDBs]
-6. [Step 6: Reconciling the Cluster]
-7. [Verification and Final Checks]
+5. [Step 5: Backing Up PDBs]
+6. [Step 6: Restoring Up PDBs]
+7. [Step 6: Reconciling the Cluster]
+8. [Verification and Final Checks]
 
 Overview: 
 
