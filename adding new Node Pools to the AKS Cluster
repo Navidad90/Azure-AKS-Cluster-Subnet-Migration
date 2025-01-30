@@ -1,0 +1,7 @@
+az aks nodepool add \
+  --resource-group <contoso-openwebui-rg> \
+  --cluster-name <contoso-akscluster> \
+  --name <contoso> \
+  --node-count 3 \
+  --node-vm-size Standard_D2plds_v6 \
+  --vnet-subnet-id <subnet-id>
