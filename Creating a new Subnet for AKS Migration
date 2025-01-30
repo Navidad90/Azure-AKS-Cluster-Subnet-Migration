@@ -1,0 +1,7 @@
+# Creating a new Subnet for AKS Migration
+
+az network vnet subnet create \
+  --resource-group <contoso-openwebui-rg> \
+  --vnet-name <contoso-openwebui-vnet> \
+  --name <contoso-subnet> \
+  --address-prefixes <SUBNET_CIDR>
