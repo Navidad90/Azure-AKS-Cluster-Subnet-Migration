@@ -1,0 +1,36 @@
+# Step 1: Check Node Pool Health
+kubectl get nodes -o wide
+
+Step 2: Verify All Pods are Running
+kubectl get pods -A -o wide
+
+Step 3: Ensure DaemonSets Are Running
+kubectl get daemonset -A
+
+Step 4: Verify Services and Networking
+kubectl get svc -A
+
+Step 5: Check Cluster Events for Issues
+kubectl get events --sort-by=.metadata.creationTimestamp
+
+Step 6: Verify PDBs Were Restored
+kubectl get pdb -A
+
+Step 7: Validate Cluster State
+az aks show \
+  --resource-group <contoso-openwebui-rg> \
+  --name <contoso-openwebui-akscluster> \
+  --query provisioningState
+
+# Check the node pools
+
+az aks nodepool list \
+  --resource-group <contoso-openwebui-rg> \
+  --cluster-name <contoso-openwebui-akscluster> \
+  --output table
+
+# Step 8: Run a Test Deployment
+kubectl run test-nginx --image=nginx --port=80
+
+# Check if the pod is running
+kubectl get pods | grep test-nginx
