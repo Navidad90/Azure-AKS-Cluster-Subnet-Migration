@@ -1,0 +1,5 @@
+# Remove the Old Node Pool
+az aks nodepool delete \
+  --resource-group <contoso-openwebui-rg> \
+  --cluster-name <contoso-openwebui-aks-cluster> \
+  --name aks-contoso
