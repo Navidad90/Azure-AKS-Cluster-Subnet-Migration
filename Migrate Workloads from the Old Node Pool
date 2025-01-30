@@ -1,2 +1,7 @@
 # Cordon the Old Node Pool
+
 kubectl cordon <aks-contoso-55661234-vmss12156485>
+
+# Drain the Old Node Pool
+
+kubectl drain <aks-contoso-55661234-vmss12156485> --ignore-daemonsets --delete-emptydir-data
