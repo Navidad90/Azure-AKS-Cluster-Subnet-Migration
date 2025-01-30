@@ -1,0 +1,2 @@
+# Cordon the Old Node Pool
+kubectl cordon <aks-contoso-55661234-vmss12156485>
