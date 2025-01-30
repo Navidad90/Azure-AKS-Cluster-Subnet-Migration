@@ -1,0 +1,3 @@
+# Backup Pod Disruption Budgets (PDBs)
+
+kubectl get pdb -A -o yaml > backup.yaml
