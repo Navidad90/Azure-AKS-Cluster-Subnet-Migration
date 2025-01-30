@@ -1,0 +1,3 @@
+# Restore Pod Disrution Budgets (PDBs)
+
+kubectl apply -f backup.yaml
