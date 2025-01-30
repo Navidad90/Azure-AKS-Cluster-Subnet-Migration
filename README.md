@@ -8,8 +8,9 @@
 4. [Step 4: Removing the Old Node Pool]
 5. [Step 5: Backing Up PDBs]
 6. [Step 6: Restoring Up PDBs]
-7. [Step 6: Reconciling the Cluster]
-8. [Verification and Final Checks]
+7. [Step 7: Reconciling the Cluster]
+8. [Step 8: Deleting the PDBs]
+9. [Verification and Final Checks]
 
 Overview: 
 
