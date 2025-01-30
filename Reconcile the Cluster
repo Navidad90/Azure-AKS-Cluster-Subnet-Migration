@@ -1,0 +1,3 @@
+# Reconcile the Cluster
+
+az resource update --ids /subscriptions/98/resourceGroups/rg-planetapp/providers/Microsoft.ContainerService/managedClusters/k8s-planetapp-prod-we
